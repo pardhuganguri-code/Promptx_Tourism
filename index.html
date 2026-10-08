@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover India - An immersive digital journey through India's timeless heritage, diverse landscapes, vibrant festivals, regional cuisines, and unforgettable travel stories.">
+    <meta name="keywords" content="India tourism, incredible India, Indian heritage, travel planner, Indian festivals, regional Indian food, hidden gems India">
+    <title>🇮🇳 DISCOVER INDIA — Every Journey Tells a Story</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display / Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- DYNAMICALLY SCROLLING SIDES ARTWORK (ESSENCE OF INDIAN CULTURE) -->
+    <aside class="culture-side-strip strip-left" aria-hidden="true">
+        <div class="strip-inner"></div>
+    </aside>
+    <aside class="culture-side-strip strip-right" aria-hidden="true">
+        <div class="strip-inner"></div>
+    </aside>
+
+    <!-- STICKY MODERN NAVIGATION -->
+    <header id="main-header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#home" class="nav-brand" aria-label="Discover India Home">
+                <span class="flag-icon">🇮🇳</span>
+                <span class="brand-text">
+                    <span class="brand-title">DISCOVER INDIA</span>
+                    <span class="brand-sub">EVERY JOURNEY TELLS A STORY</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#explore" class="nav-link">Explore</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#heritage" class="nav-link">Heritage</a></li>
+                <li><a href="#food" class="nav-link">Food</a></li>
+                <li><a href="#festivals" class="nav-link">Festivals</a></li>
+                <li><a href="#hidden" class="nav-link">Hidden India</a></li>
+                <li><a href="#planner" class="nav-link">Plan Journey</a></li>
+                <li><a href="#portals" class="nav-link">Official Portals</a></li>
+                <li><a href="#info" class="nav-link">Travel Guide</a></li>
+                <li class="nav-cta-item">
+                    <a href="#destinations" class="btn btn-primary nav-cta">Start Exploring</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    <span>EXPLORE • EXPERIENCE • REMEMBER</span>
+                    <span class="eyebrow-dot"></span>
+                </div>
+                <h1 class="hero-title">DISCOVER INDIA</h1>
+                <p class="hero-subtitle">
+                    From ancient civilizations to living traditions, discover the places, people, flavors, and stories that make India unforgettable.
+                </p>
+                <div class="hero-actions">
+                    <a href="#destinations" class="btn btn-primary hero-btn">Explore India</a>
+                    <a href="#planner" class="btn btn-secondary hero-btn">Plan My Journey</a>
+                </div>
+            </div>
+
+            <!-- FLOATING GLASSMORPHISM EXPLORATION & SEARCH PANEL -->
+            <div class="hero-search-panel" id="hero-search-box">
+                <div class="search-panel-header">
+                    <span class="search-panel-icon">🧭</span>
+                    <h3>Where do you want to go?</h3>
+                </div>
+                <div class="search-input-wrapper">
+                    <input type="text" id="hero-search-input" placeholder="Search by destination, state, or vibe (e.g. Kerala, Forts, Dunes...)" aria-label="Search destinations">
+                    <button id="hero-search-btn" class="search-btn" aria-label="Search">
+                        <span>Search</span>
+                    </button>
+                </div>
+                <div class="quick-filter-pills" id="hero-filter-pills">
+                    <span class="pill-label">Popular Vibes:</span>
+                    <button class="filter-pill" data-category="Heritage">🏛️ Heritage</button>
+                    <button class="filter-pill" data-category="Nature">🌿 Nature</button>
+                    <button class="filter-pill" data-category="Food">🍛 Food</button>
+                    <button class="filter-pill" data-category="Culture">🎭 Culture</button>
+                    <button class="filter-pill" data-category="Adventure">🏔️ Adventure</button>
+                    <button class="filter-pill" data-category="Spirituality">✨ Spirituality</button>
+                </div>
+            </div>
+
+            <a href="#explore" class="scroll-indicator" aria-label="Scroll down to explore">
+                <span class="scroll-text">Scroll to Discover</span>
+                <span class="scroll-arrow">↓</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- DID YOU KNOW TICKER / STATS -->
+    <div class="highlight-bar">
+        <div class="highlight-container">
+            <div class="highlight-stat">
+                <span class="stat-number">5,000+</span>
+                <span class="stat-label">Years of Living Civilization</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="highlight-stat">
+                <span class="stat-number">42</span>
+                <span class="stat-label">UNESCO World Heritage Sites</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="highlight-stat">
+                <span class="stat-number">28</span>
+                <span class="stat-label">States • Boundless Stories</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="highlight-stat">
+                <span class="stat-number">1,000+</span>
+                <span class="stat-label">Regional Cuisines & Flavors</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: INDIA EXPLORATION (6 MAJOR EXPERIENCES) -->
+    <section class="section experiences-section" id="explore">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">DIVERSITY IN EVERY STEP</span>
+                <h2 class="section-title">One Country. A Thousand Experiences.</h2>
+                <p class="section-desc">
+                    India doesn't offer a single type of travel. Whether you seek monumental fortresses, sacred waters, snow-crested heights, or spice gardens, your story begins here.
+                </p>
+            </div>
+
+            <div class="experience-grid">
+                <!-- Heritage -->
+                <div class="experience-card" data-category="Heritage">
+                    <div class="exp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=700&q=80" alt="Indian Heritage Architecture" loading="lazy">
+                        <div class="exp-badge">🏛️ Heritage</div>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Timeless Heritage</h3>
+                        <p>Walk through centuries of royal forts, intricately carved temple spires, and grand palaces carved in stone.</p>
+                        <button class="exp-cta" data-category="Heritage">Explore Heritage →</button>
+                    </div>
+                </div>
+
+                <!-- Nature -->
+                <div class="experience-card" data-category="Nature">
+                    <div class="exp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80" alt="Kerala Backwaters Nature" loading="lazy">
+                        <div class="exp-badge">🌿 Nature</div>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Untouched Nature</h3>
+                        <p>From palm-shaded tropical waterways in Kerala to lush emerald valleys and living root bridges in Meghalaya.</p>
+                        <button class="exp-cta" data-category="Nature">Explore Nature →</button>
+                    </div>
+                </div>
+
+                <!-- Food -->
+                <div class="experience-card" data-category="Food">
+                    <div class="exp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=700&q=80" alt="Indian Food and Spices" loading="lazy">
+                        <div class="exp-badge">🍛 Food</div>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Flavors & Feasts</h3>
+                        <p>A culinary symphony of slow-cooked biryanis, fiery coastal curries, crisp dosas, and royal thalis.</p>
+                        <button class="exp-cta" data-category="Food">Explore Food →</button>
+                    </div>
+                </div>
+
+                <!-- Culture -->
+                <div class="experience-card" data-category="Culture">
+                    <div class="exp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=700&q=80" alt="Rajasthan Culture" loading="lazy">
+                        <div class="exp-badge">🎭 Culture</div>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Living Traditions</h3>
+                        <p>Immerse yourself in vibrant classical dance forms, age-old textile weaves, folk melodies, and master craftsmanship.</p>
+                        <button class="exp-cta" data-category="Culture">Explore Culture →</button>
+                    </div>
+                </div>
+
+                <!-- Adventure -->
+                <div class="experience-card" data-category="Adventure">
+                    <div class="exp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=700&q=80" alt="Himalayas Adventure" loading="lazy">
+                        <div class="exp-badge">🏔️ Adventure</div>
+                    </div>
+                    <div class="exp-content">
+                        <h3>High-Altitude Thrills</h3>
+                        <p>Scale dramatic Himalayan passes, raft untamed mountain rivers, and traverse the golden sands of the Thar desert.</p>
+                        <button class="exp-cta" data-category="Adventure">Explore Adventure →</button>
+                    </div>
+                </div>
+
+                <!-- Spirituality -->
+                <div class="experience-card" data-category="Spirituality">
+                    <div class="exp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=700&q=80" alt="Varanasi Spiritual Ghats" loading="lazy">
+                        <div class="exp-badge">✨ Spirituality</div>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Spiritual Solace</h3>
+                        <p>Witness sacred evening Aarti rituals on riverbanks, find peace in Himalayan monasteries, and rejuvenate body and soul.</p>
+                        <button class="exp-cta" data-category="Spirituality">Explore Spirituality →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: DESTINATION DISCOVERY (DYNAMIC FILTERING & GRID) -->
+    <section class="section destination-section" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CURATED EXPEDITIONS</span>
+                <h2 class="section-title">Where will your story begin?</h2>
+                <p class="section-desc">
+                    Explore iconic destinations across India. Filter by experience type, search by region, or click any card for an in-depth story.
+                </p>
+            </div>
+
+            <!-- FILTER CONTROLS -->
+            <div class="dest-controls-wrapper">
+                <div class="filter-tabs" id="category-filter-tabs" role="tablist">
+                    <button class="tab-btn active" data-filter="all">All Destinations</button>
+                    <button class="tab-btn" data-filter="Heritage">🏛️ Heritage</button>
+                    <button class="tab-btn" data-filter="Nature">🌿 Nature</button>
+                    <button class="tab-btn" data-filter="Food">🍛 Food</button>
+                    <button class="tab-btn" data-filter="Adventure">🏔️ Adventure</button>
+                    <button class="tab-btn" data-filter="Culture">🎭 Culture</button>
+                    <button class="tab-btn" data-filter="Spirituality">✨ Spirituality</button>
+                </div>
+
+                <div class="secondary-controls">
+                    <div class="region-select-wrap">
+                        <label for="region-select" class="sr-only">Filter by Region</label>
+                        <select id="region-select" aria-label="Select Region">
+                            <option value="all">🗺️ All Regions</option>
+                            <option value="North">North India</option>
+                            <option value="South">South India</option>
+                            <option value="West">West India</option>
+                            <option value="East">East India</option>
+                            <option value="Northeast">Northeast India</option>
+                        </select>
+                    </div>
+
+                    <div class="search-input-field">
+                        <input type="text" id="dest-search-input" placeholder="Filter by place name or state..." aria-label="Filter destinations">
+                        <span class="dest-count-badge" id="dest-count">10 places</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESTINATIONS CONTAINER (DYNAMICALLY POPULATED) -->
+            <div class="destinations-grid" id="destinations-grid">
+                <!-- Javascript will render 10+ dynamic destinations -->
+            </div>
+
+            <div class="no-results-msg" id="no-results" style="display: none;">
+                <p>No destinations found matching your filters. Try resetting your search or picking another category!</p>
+                <button class="btn btn-secondary" id="reset-filters-btn">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: FEATURED DESTINATION EXPERIENCE (EDITORIAL SPLIT LAYOUT) -->
+    <section class="section featured-section" id="featured">
+        <div class="container">
+            <div class="featured-wrapper">
+                <div class="featured-media" id="featured-media">
+                    <img id="featured-image" src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=80" alt="Featured Destination" loading="lazy">
+                    <div class="featured-overlay-badge" id="featured-region-badge">North-West India</div>
+                </div>
+
+                <div class="featured-editorial" id="featured-editorial">
+                    <div class="editorial-eyebrow">
+                        <span class="spotlight-tag">FEATURED STORY</span>
+                        <div class="featured-selector-dots" id="featured-dots">
+                            <button class="dot-btn active" data-index="0" aria-label="Rajasthan">1</button>
+                            <button class="dot-btn" data-index="1" aria-label="Kerala">2</button>
+                            <button class="dot-btn" data-index="2" aria-label="Ladakh">3</button>
+                            <button class="dot-btn" data-index="3" aria-label="Varanasi">4</button>
+                        </div>
+                    </div>
+
+                    <h3 class="editorial-state" id="featured-state">RAJASTHAN</h3>
+                    <h2 class="editorial-title" id="featured-title">Where history lives in color.</h2>
+                    
+                    <p class="editorial-story" id="featured-story">
+                        Rajasthan is a living tapestry of desert sunsets, impregnable cliffside forts, and royal courtyards echoing with tales of valor and romantic balladry. From the amber sandstone of Jaisalmer to the azure houses of Jodhpur and the palace-mirrored waters of Lake Pichola, every corner is soaked in living art.
+                    </p>
+
+                    <div class="editorial-chips" id="featured-chips">
+                        <span class="chip">🏜️ Desert Dunes</span>
+                        <span class="chip">🏰 Royal Forts</span>
+                        <span class="chip">🎨 Vibrant Folk Arts</span>
+                        <span class="chip">🍛 Dal Baati Churma</span>
+                    </div>
+
+                    <div class="editorial-meta-box">
+                        <div class="meta-item">
+                            <span class="meta-label">Best Time to Visit</span>
+                            <span class="meta-value" id="featured-season">October – March</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Must Experience</span>
+                            <span class="meta-value" id="featured-attraction">Jaisalmer Camel Safari • Amber Fort • Udaipur Lakes</span>
+                        </div>
+                    </div>
+
+                    <div class="editorial-actions">
+                        <button class="btn btn-primary" id="featured-explore-btn">Explore Rajasthan Stories →</button>
+                        <div class="editorial-nav-btns">
+                            <button class="btn-icon" id="feat-prev-btn" aria-label="Previous Featured Destination">←</button>
+                            <button class="btn-icon" id="feat-next-btn" aria-label="Next Featured Destination">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: HERITAGE SECTION ("WALK THROUGH HISTORY") -->
+    <section class="section heritage-section" id="heritage">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">CHRONICLES OF CIVILIZATION</span>
+                <h2 class="section-title">Walk Through History</h2>
+                <p class="section-desc">
+                    Journey through millennia of human ingenuity, from ancient rock-cut monasteries to soaring stone gopurams and sublime marble mausoleums.
+                </p>
+            </div>
+
+            <!-- TIMELINE CHIPS -->
+            <div class="heritage-timeline-bar">
+                <div class="timeline-era-item active" data-era="all">All Eras</div>
+                <div class="timeline-era-item" data-era="ancient">Ancient Civilizations (300 BCE – 600 CE)</div>
+                <div class="timeline-era-item" data-era="medieval">Medieval Dynasties (700 CE – 1500 CE)</div>
+                <div class="timeline-era-item" data-era="mughal">Imperial Renaissance (1500 CE – 1800 CE)</div>
+            </div>
+
+            <div class="heritage-grid" id="heritage-grid">
+                <!-- Heritage cards populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: FOOD SECTION ("TASTE INDIA") -->
+    <section class="section food-section" id="food">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">A CONTINENT OF FLAVORS</span>
+                <h2 class="section-title">Taste India</h2>
+                <p class="section-quote">
+                    “Your itinerary can be planned around food. We won't judge.”
+                </p>
+                <p class="section-desc">
+                    In India, food is memory, philosophy, and heartfelt hospitality. Click on any regional culinary staple to uncover its spices, secrets, and heritage.
+                </p>
+            </div>
+
+            <div class="food-grid" id="food-grid">
+                <!-- Food cards generated via JS with interactive modal/drawer details -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FESTIVALS & TRADITIONS -->
+    <section class="section festivals-section" id="festivals">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">LIVING RHYTHMS</span>
+                <h2 class="section-title">India Celebrates Differently.</h2>
+                <p class="section-desc">
+                    Every season brings a celebration of light, harvest, triumph, and devotion. Experience how communities across India come together in kaleidoscope colors.
+                </p>
+            </div>
+
+            <div class="festivals-carousel" id="festivals-carousel">
+                <!-- Festivals dynamically inserted via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: HIDDEN INDIA ("BEYOND THE FAMOUS") -->
+    <section class="section hidden-section" id="hidden">
+        <div class="container">
+            <div class="hidden-box">
+                <div class="hidden-header">
+                    <span class="section-tag-gold">STANDOUT DISCOVERY</span>
+                    <h2 class="section-title text-white">Beyond the Famous.</h2>
+                    <p class="hidden-subtitle">
+                        “India isn't only about the places you've already seen on Instagram.”
+                    </p>
+                    <p class="hidden-text">
+                        Deep in pine valleys, forgotten river islands, and high Himalayan plateaus lie sanctuaries of silence and untamed wonder. Click below to reveal a randomly chosen hidden jewel.
+                    </p>
+                    <button class="btn btn-gold" id="randomize-hidden-btn">
+                        <span>✨ Discover a Hidden Destination</span>
+                    </button>
+                </div>
+
+                <div class="hidden-card-display" id="hidden-card-display">
+                    <!-- Random destination card will render here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 14: TRAVEL EXPERIENCES ("DON'T JUST VISIT. EXPERIENCE.") -->
+    <section class="section experiences-cinematic" id="experiences">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">MOMENTS OVER MONUMENTS</span>
+                <h2 class="section-title">Don't Just Visit. Experience.</h2>
+                <p class="section-desc">
+                    True travel isn't a checklist of sights; it's the goosebumps of dawn chants, the scent of crushed spices, and the silence of a desert night.
+                </p>
+            </div>
+
+            <div class="cinematic-grid">
+                <div class="cinematic-card">
+                    <img src="assets/varanasi.png" alt="Ganges Sunrise Boat Ride" loading="lazy">
+                    <div class="cinematic-content">
+                        <span class="cinematic-location">Varanasi, Uttar Pradesh</span>
+                        <h3>Watch sunrise over the sacred Ganges</h3>
+                        <p>Row through golden morning mists as devotional bells ring and earthen oil lamps float gently across holy waters.</p>
+                    </div>
+                </div>
+
+                <div class="cinematic-card">
+                    <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80" alt="Thar Desert Jaisalmer" loading="lazy">
+                    <div class="cinematic-content">
+                        <span class="cinematic-location">Jaisalmer, Rajasthan</span>
+                        <h3>Ride into the singing Thar Desert</h3>
+                        <p>Cross rippling sand dunes at twilight, dine under canopy of a million stars, and wake to desert folk flute melodies.</p>
+                    </div>
+                </div>
+
+                <div class="cinematic-card">
+                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala Houseboat Backwaters" loading="lazy">
+                    <div class="cinematic-content">
+                        <span class="cinematic-location">Alleppey, Kerala</span>
+                        <h3>Drift through tranquil palm backwaters</h3>
+                        <p>Glide in a traditional handcrafted Kettuvallam houseboat, savoring fresh Karimeen fish curry while kingfishers skim overhead.</p>
+                    </div>
+                </div>
+
+                <div class="cinematic-card">
+                    <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?auto=format&fit=crop&w=800&q=80" alt="Hampi Ruins Boulders" loading="lazy">
+                    <div class="cinematic-content">
+                        <span class="cinematic-location">Hampi, Karnataka</span>
+                        <h3>Explore ancient Vijayanagara at sunset</h3>
+                        <p>Climb Matanga Hill as the setting sun paints boulder-strewn kingdoms and 14th-century temple columns in molten bronze.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: BUILD YOUR JOURNEY (INTERACTIVE MINI TRIP PLANNER) -->
+    <section class="section planner-section" id="planner">
+        <div class="container">
+            <div class="planner-card">
+                <div class="planner-intro text-center">
+                    <span class="section-tag">TAILORED ODYSSEY</span>
+                    <h2 class="section-title">Build Your Indian Journey</h2>
+                    <p class="section-desc">
+                        Select your travel philosophy, time window, and preferred region. Our recommendation engine will formulate your custom route with highlights and season guidance.
+                    </p>
+                </div>
+
+                <form class="planner-form" id="planner-form" onsubmit="return false;">
+                    <!-- Step 1: Travel Style -->
+                    <div class="form-group">
+                        <label class="group-label">1. Choose Your Travel Style</label>
+                        <div class="options-pills" id="style-options">
+                            <button type="button" class="option-pill active" data-style="Heritage">🏛️ Heritage & History</button>
+                            <button type="button" class="option-pill" data-style="Adventure">🏔️ Mountain & Adventure</button>
+                            <button type="button" class="option-pill" data-style="Food">🍛 Culinary Expeditions</button>
+                            <button type="button" class="option-pill" data-style="Nature">🌿 Nature & Wilderness</button>
+                            <button type="button" class="option-pill" data-style="Spiritual">✨ Spiritual & Serene</button>
+                            <button type="button" class="option-pill" data-style="Culture">🎭 Art & Living Culture</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Trip Duration -->
+                    <div class="form-group">
+                        <label class="group-label">2. Trip Duration</label>
+                        <div class="options-pills" id="duration-options">
+                            <button type="button" class="option-pill" data-duration="weekend">⚡ Weekend (2-3 Days)</button>
+                            <button type="button" class="option-pill active" data-duration="short">🗓️ 3–5 Days</button>
+                            <button type="button" class="option-pill" data-duration="week">🎒 1 Week</button>
+                            <button type="button" class="option-pill" data-duration="epic">🗺️ 2+ Weeks (Grand Tour)</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Preferred Region -->
+                    <div class="form-group">
+                        <label class="group-label">3. Region of Interest</label>
+                        <div class="options-pills" id="region-options">
+                            <button type="button" class="option-pill active" data-region="North">🏔️ North India</button>
+                            <button type="button" class="option-pill" data-region="South">🌴 South India</button>
+                            <button type="button" class="option-pill" data-region="West">🏜️ West India</button>
+                            <button type="button" class="option-pill" data-region="East">🍵 East India</button>
+                            <button type="button" class="option-pill" data-region="Northeast">🌸 Northeast India</button>
+                        </div>
+                    </div>
+
+                    <div class="form-action text-center">
+                        <button type="button" class="btn btn-primary btn-large" id="generate-plan-btn">
+                            ✨ Generate My Custom Itinerary
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Recommendation Output Box -->
+                <div class="plan-output-container" id="plan-output" style="display: none;">
+                    <div class="plan-result-card">
+                        <div class="plan-result-badge" id="plan-personality">The Soulful Explorer</div>
+                        <h3 class="plan-result-title" id="plan-title">Your journey could begin in Kerala.</h3>
+                        <p class="plan-result-summary" id="plan-summary"></p>
+                        
+                        <div class="plan-details-grid">
+                            <div class="plan-detail-col">
+                                <h4>📍 Recommended Route & Stops</h4>
+                                <ul id="plan-stops" class="plan-list"></ul>
+                            </div>
+                            <div class="plan-detail-col">
+                                <h4>🌟 Signature Highlights</h4>
+                                <ul id="plan-experiences" class="plan-list"></ul>
+                            </div>
+                            <div class="plan-detail-col">
+                                <h4>🗓️ Ideal Travel Window</h4>
+                                <p id="plan-season" class="plan-text-val"></p>
+                                <h4>🎒 Travel Tip</h4>
+                                <p id="plan-tip" class="plan-text-val"></p>
+                            </div>
+                        </div>
+
+                        <div class="plan-card-footer">
+                            <button class="btn btn-secondary btn-sm" id="copy-plan-btn">📋 Copy Itinerary</button>
+                            <button class="btn btn-primary btn-sm" id="view-stops-dest-btn">🔍 View Destinations in Explorer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 15: “DID YOU KNOW?” INTERACTION -->
+    <section class="section trivia-section" id="trivia">
+        <div class="container">
+            <div class="trivia-box">
+                <div class="trivia-icon">💡</div>
+                <div class="trivia-content">
+                    <span class="trivia-tag">INDIA, IN FACTS</span>
+                    <h3 class="trivia-fact" id="trivia-fact-text">
+                        India is home to the world’s highest railway bridge — the Chenab Bridge in Jammu & Kashmir, soaring 359 meters above the river bed, higher than the Eiffel Tower!
+                    </h3>
+                    <div class="trivia-meta">
+                        <span class="trivia-category" id="trivia-fact-cat">Engineering & Geography</span>
+                        <button class="trivia-btn" id="next-trivia-btn">
+                            <span>Reveal another fact →</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: OFFICIAL STATE & NATIONAL TOURISM PORTALS -->
+    <section class="section official-portals-section" id="portals">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag-gold">VERIFIED GOVERNMENT GATEWAYS</span>
+                <h2 class="section-title">Official Tourism Portals</h2>
+                <p class="section-desc">
+                    Connect directly with authenticated government tourism departments across India for e-visas, state permits, eco-tourism bookings, and official local travel advisories.
+                </p>
+            </div>
+
+            <!-- NATIONAL SPOTLIGHT HERO CARDS (FLASHY GOLDEN GLOW) -->
+            <div class="national-portals-wrapper">
+                <h3 class="portals-subheading">🏛️ National Tourism Authorities & Apex Gateways</h3>
+                <div class="national-portals-grid" id="national-portals-grid">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </div>
+
+            <!-- STATE TOURISM DIRECTORY WITH FLASHY CARDS & LIVE FILTER -->
+            <div class="state-directory-box">
+                <div class="state-directory-header">
+                    <div class="state-header-text">
+                        <h3 class="portals-subheading">🇮🇳 Individual State & Union Territory Gateways</h3>
+                        <p class="state-sub-desc">Click any portal to visit the official authenticated state government tourism website.</p>
+                    </div>
+
+                    <div class="state-search-bar">
+                        <span class="state-search-icon">🔍</span>
+                        <input type="text" id="state-portal-search" placeholder="Search state (e.g. Rajasthan, Kerala, Meghalaya...)" aria-label="Search State Tourism Portal">
+                        <button id="clear-state-search" class="clear-search-btn" title="Clear Search" type="button">✕</button>
+                    </div>
+                </div>
+
+                <div class="state-region-tabs" id="state-region-tabs">
+                    <button class="state-tab-btn active" data-region="all">All States & UTs (22)</button>
+                    <button class="state-tab-btn" data-region="North">North India</button>
+                    <button class="state-tab-btn" data-region="South">South India</button>
+                    <button class="state-tab-btn" data-region="West">West India</button>
+                    <button class="state-tab-btn" data-region="East">East India</button>
+                    <button class="state-tab-btn" data-region="Northeast">Northeast</button>
+                    <button class="state-tab-btn" data-region="Central">Central India</button>
+                </div>
+
+                <div class="state-portals-grid" id="state-portals-grid">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 13: TRAVEL INFORMATION ("BEFORE YOU GO" & FAQ) -->
+    <section class="section info-section" id="info">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">ESSENTIAL TRAVELER WISDOM</span>
+                <h2 class="section-title">Before You Go</h2>
+                <p class="section-desc">
+                    Smart preparation turns an adventurous trip into a smooth, life-changing voyage. Here are the core essentials for navigating India with ease.
+                </p>
+            </div>
+
+            <!-- QUICK TRAVEL INFO CARDS -->
+            <div class="info-cards-grid">
+                <div class="info-card">
+                    <span class="info-icon">🗓️</span>
+                    <h3>Best Seasons</h3>
+                    <p><strong>Oct – Mar:</strong> Optimal weather for Rajasthan, plains, and South India.<br><strong>May – Sep:</strong> Best for high Himalayas (Ladakh & Spiti).</p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">💰</span>
+                    <h3>UPI & Currency</h3>
+                    <p>India is a digital payment marvel. Foreign tourists can use UPI (One World / merchant apps) via scan-to-pay even at local chai stalls, alongside Indian Rupees (INR).</p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">🚆</span>
+                    <h3>Transport & Trains</h3>
+                    <p>Experience the world's 4th largest rail system. State-of-the-art semi-high-speed <em>Vande Bharat</em> trains link major hubs comfortably.</p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">🏨</span>
+                    <h3>Authentic Stays</h3>
+                    <p>Choose from restored 300-year-old royal Havelis, tranquil spice-plantation homestays, to luxury Kettuvallam houseboats.</p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">🛂</span>
+                    <h3>Visas & Entry</h3>
+                    <p>Most travelers are eligible for an official Indian e-Visa (30 days, 1 year, or 5 years) online via the official portal before departure.</p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">🧳</span>
+                    <h3>Cultural Etiquette</h3>
+                    <p>Dress respectfully when visiting temples and gurudwaras (remove footwear, cover head where customary). Greet with a warm "Namaste".</p>
+                </div>
+            </div>
+
+            <!-- EXPANDABLE FAQ ACCORDION -->
+            <div class="faq-container">
+                <h3 class="faq-heading text-center">Frequently Asked Questions</h3>
+
+                <div class="accordion" id="faq-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>Which season is best for travelling across India?</span>
+                            <span class="accordion-arrow">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p>For most of India (the Golden Triangle, Rajasthan, Mumbai, and South India), October through March offers pleasant, dry, and cool weather. If you want to experience the snow-capped high Himalayas (Ladakh, Spiti, Zanskar), the high mountain passes are open and best visited between June and September.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>How can I travel comfortably between cities and states?</span>
+                            <span class="accordion-arrow">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p>India is connected by an extensive domestic flight network with major hubs in Delhi, Mumbai, Bengaluru, and Chennai. For scenic intercity travel, the Indian Railways network—especially premium Vande Bharat, Rajdhani, and Shatabdi express trains—provides punctual, air-conditioned, and scenic transit.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>What should I pack for an Indian trip?</span>
+                            <span class="accordion-arrow">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Pack lightweight, breathable cotton or linen clothing, comfortable slip-on walking shoes (easy to remove at temples), a scarf or shawl for covering shoulders/head, sunscreen, and a universal power adapter (Type D & C). If heading to Ladakh, Himachal, or Sikkim, pack thermal layers even in summer.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>Which regions are best for first-time international travellers?</span>
+                            <span class="accordion-arrow">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p>The iconic "Golden Triangle" (Delhi, Agra, Jaipur) provides an unforgettable introduction to historic monuments and royal architecture. For a slower, nature-steeped first visit, Kerala's tranquil backwaters, tea gardens, and wellness ayurveda resorts offer a serene, relaxed entry point.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>Is India suitable for solo and female travellers?</span>
+                            <span class="accordion-arrow">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Yes! Millions of solo travelers explore India every year. By choosing well-reviewed boutique homestays or heritage properties, using trusted cab apps (like Uber or Ola), keeping a local 5G eSIM connected, and respecting regional customs, solo travelers enjoy heartwarming hospitality and lifelong friendships.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                    <span class="flag-icon">🇮🇳</span>
+                    <span class="footer-title">DISCOVER INDIA</span>
+                </div>
+                <p class="footer-tagline">
+                    “India isn't a place you simply visit. It's a story you become part of.”
+                </p>
+                <p class="footer-mission">
+                    Crafted with care to celebrate the boundless heritage, living cultures, regional flavors, and timeless beauty of the Indian subcontinent.
+                </p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#explore">One Country Experiences</a></li>
+                    <li><a href="#destinations">Destinations Explorer</a></li>
+                    <li><a href="#featured">Featured Expedition</a></li>
+                    <li><a href="#heritage">Heritage Timeline</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Discover More</h4>
+                <ul>
+                    <li><a href="#food">Taste India Regional Food</a></li>
+                    <li><a href="#festivals">Indian Festivals</a></li>
+                    <li><a href="#hidden">Beyond the Famous (Hidden India)</a></li>
+                    <li><a href="#planner">Build Your Journey</a></li>
+                    <li><a href="#portals">Official State Portals</a></li>
+                    <li><a href="#info">Essential Travel Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter-col">
+                <h4>Your Journey Begins</h4>
+                <p>Bookmark your favorite destinations and plan an unforgettable travel story across India.</p>
+                <div class="footer-saved-badge">
+                    <span>❤️ Saved in Journey: </span>
+                    <strong id="footer-saved-count">0 destinations</strong>
+                </div>
+                <a href="#planner" class="btn btn-secondary btn-sm footer-btn">Launch Trip Planner</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© 2026 <strong>Discover India</strong> • PromptX Hackathon Showcase</p>
+                <p class="footer-love">Made with <span class="heart-pulse">❤️</span> for Incredible India 🇮🇳</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UNIVERSAL MODAL FOR DESTINATIONS & HERITAGE -->
+    <div class="modal-overlay" id="detail-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">✕</button>
+            <div class="modal-scroll-body" id="modal-content">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast" id="toast-notification" role="status" aria-live="polite"></div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
